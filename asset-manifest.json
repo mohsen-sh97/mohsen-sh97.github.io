@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/mohsen_shooshtari/static/css/main.cb301495.css",
+    "main.js": "/mohsen_shooshtari/static/js/main.345efda1.js",
+    "static/js/124.cff9b150.chunk.js": "/mohsen_shooshtari/static/js/124.cff9b150.chunk.js",
+    "static/css/56.38b2df9f.chunk.css": "/mohsen_shooshtari/static/css/56.38b2df9f.chunk.css",
+    "static/js/56.db23be3c.chunk.js": "/mohsen_shooshtari/static/js/56.db23be3c.chunk.js",
+    "static/css/353.fe9c079c.chunk.css": "/mohsen_shooshtari/static/css/353.fe9c079c.chunk.css",
+    "static/js/353.a6ae83c4.chunk.js": "/mohsen_shooshtari/static/js/353.a6ae83c4.chunk.js",
+    "static/js/660.dff304d2.chunk.js": "/mohsen_shooshtari/static/js/660.dff304d2.chunk.js",
+    "static/js/57.a6c51415.chunk.js": "/mohsen_shooshtari/static/js/57.a6c51415.chunk.js",
+    "static/js/697.31498dcd.chunk.js": "/mohsen_shooshtari/static/js/697.31498dcd.chunk.js",
+    "static/js/449.0ffb5098.chunk.js": "/mohsen_shooshtari/static/js/449.0ffb5098.chunk.js",
+    "static/js/453.87e45203.chunk.js": "/mohsen_shooshtari/static/js/453.87e45203.chunk.js",
+    "static/js/819.76d00ca9.chunk.js": "/mohsen_shooshtari/static/js/819.76d00ca9.chunk.js",
+    "static/js/712.d74188d1.chunk.js": "/mohsen_shooshtari/static/js/712.d74188d1.chunk.js",
+    "index.html": "/mohsen_shooshtari/index.html",
+    "main.cb301495.css.map": "/mohsen_shooshtari/static/css/main.cb301495.css.map",
+    "main.345efda1.js.map": "/mohsen_shooshtari/static/js/main.345efda1.js.map",
+    "124.cff9b150.chunk.js.map": "/mohsen_shooshtari/static/js/124.cff9b150.chunk.js.map",
+    "56.38b2df9f.chunk.css.map": "/mohsen_shooshtari/static/css/56.38b2df9f.chunk.css.map",
+    "56.db23be3c.chunk.js.map": "/mohsen_shooshtari/static/js/56.db23be3c.chunk.js.map",
+    "353.fe9c079c.chunk.css.map": "/mohsen_shooshtari/static/css/353.fe9c079c.chunk.css.map",
+    "353.a6ae83c4.chunk.js.map": "/mohsen_shooshtari/static/js/353.a6ae83c4.chunk.js.map",
+    "660.dff304d2.chunk.js.map": "/mohsen_shooshtari/static/js/660.dff304d2.chunk.js.map",
+    "57.a6c51415.chunk.js.map": "/mohsen_shooshtari/static/js/57.a6c51415.chunk.js.map",
+    "697.31498dcd.chunk.js.map": "/mohsen_shooshtari/static/js/697.31498dcd.chunk.js.map",
+    "449.0ffb5098.chunk.js.map": "/mohsen_shooshtari/static/js/449.0ffb5098.chunk.js.map",
+    "453.87e45203.chunk.js.map": "/mohsen_shooshtari/static/js/453.87e45203.chunk.js.map",
+    "819.76d00ca9.chunk.js.map": "/mohsen_shooshtari/static/js/819.76d00ca9.chunk.js.map",
+    "712.d74188d1.chunk.js.map": "/mohsen_shooshtari/static/js/712.d74188d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb301495.css",
+    "static/js/main.345efda1.js"
+  ]
+}
