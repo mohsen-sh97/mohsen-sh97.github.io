@@ -1,33 +1,60 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
-        },
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
+            "title": "Full-Stack Developer",
+            "subtitle": "Freelancer",
             "workType": "Freelance",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Developed the full website for royalstay.net, including database design, backend and frontend development, and DevOps implementation."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "08/2024 – Present"
+        },
+        {
+            "title": "Python Developer & API Platform Manager",
+            "subtitle": "Anacav Company",
+            "workType": "Full-time",
+            "workDescription": [
+                "Led the design, development, and implementation of backend (FastAPI) for seraj.isfahan.ir.",
+                "Managed the full API lifecycle using WSO2 API Manager, including deployment and maintenance.",
+                "Installed and clustered WSO2 API Manager on multiple servers with tools like NGINX, KeepAlive, and Ansible.",
+                "Enhanced application performance by 50% by optimizing database management with SingleStore, PostgreSQL, and Redis.",
+                "Implemented OAuth and JWT security protocols for authentication and authorization.",
+                "Developed and documented APIs using Swagger (FastAPI) to streamline developer onboarding."
+            ],
+            "dateText": "08/2023 – 08/2024"
+        },
+        {
+            "title": "Software Consultant & Content Producer",
+            "subtitle": "Abaqus Center Company",
+            "workType": "Full-time",
+            "workDescription": [
+                "Developed Python scripts for Abaqus software and created training packages in this domain.",
+                "Built web scraping tools using SQLite databases to collect specific data from the internet.",
+                "Automated repetitive tasks with Python bots and developed Telegram bots for various purposes."
+            ],
+            "dateText": "11/2021 – 08/2023"
+        },
+        {
+            "title": "Python Freelancer",
+            "subtitle": "Freelancing Platforms",
+            "workType": "Freelance",
+            "workDescription": [
+                "Developed a trading bot for KuCoin Crypto Exchange to automate deals based on third-party signals.",
+                "Completed projects utilizing Python libraries like Pandas, Selenium, and NumPy.",
+                "Implemented a weather forecasting project using machine learning algorithms (Linear Regression and SVM) in MATLAB."
+            ],
+            "dateText": "05/2017 – 11/2021"
+        },
+        {
+            "title": "Computer Engineer",
+            "subtitle": "Isfahan Pip Factory",
+            "workType": "Internship",
+            "workDescription": [
+                "Invented a multi-torch height controller for CNC plasma cutting machines using Arduino boards.",
+                "Developed and programmed the controller software on the Arduino platform.",
+                "Achieved a patent grant for the invention."
+            ],
+            "dateText": "12/2016 – 05/2017"
         }
     ]
 }

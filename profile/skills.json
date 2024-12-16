@@ -6,12 +6,8 @@
             "items" : [
      
                 {
-                    "icon": "images/skills/java.png",
-                    "title": "Java"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
+                    "icon": "images/skills/matlab.png",
+                    "title": "MATLAB"
                 },
                 {
                     "icon": "images/skills/js.png",
