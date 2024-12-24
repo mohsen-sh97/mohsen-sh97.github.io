@@ -20,22 +20,42 @@
                 {
                     "icon": "images/skills/mysql.png",
                     "title": "MySQL"
+                },
+                {
+                    "icon": "images/skills/postgresql.png",
+                    "title": "PostgreSQL"
+                },
+                {
+                    "icon": "images/skills/singlestore.png",
+                    "title": "SingleStore"
+                },
+                {
+                    "icon": "images/skills/redis.png",
+                    "title": "Redis"
                 }
         ]},
         {
             "title": "Frameworks & Technologies",
             "items" : [
                 {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
+                    "icon": "images/skills/FastAPI.png",
+                    "title": "FastAPI"
                 },
                 {
                     "icon": "images/skills/react.png",
                     "title": "React"
                 },
                 {
-                    "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
+                    "icon": "images/skills/django.png",
+                    "title": "Django"
+                },
+                {
+                    "icon": "images/skills/latex.png",
+                    "title": "LaTeX"
+                },
+                {
+                    "icon": "images/skills/Linux.png",
+                    "title": "Linux"
                 }
             ]
         },
@@ -43,16 +63,28 @@
             "title" : "Tools & Platforms",
             "items": [
                 {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
+                    "icon": "images/skills/wso2.png",
+                    "title": "WSO2"
+                },
+                {
+                    "icon": "images/skills/nginx.svg",
+                    "title": "NGINX"
                 },
                 {
                     "icon": "images/skills/git.png",
                     "title": "Git"
                 },
                 {
+                    "icon": "images/skills/Ansible.png",
+                    "title": "Ansible"
+                },
+                {
                     "icon": "images/skills/docker.png",
                     "title": "Docker"
+                },
+                {
+                    "icon": "images/skills/kafka.png",
+                    "title": "KafKa"
                 }
             ]
     }
