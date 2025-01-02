@@ -44,20 +44,17 @@
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "image" : "images/projects/domino.png",
+            "title": "Domino matrix",
+            "bodyText": "- A code that give you the minimum number of dominoes you should fell in matrix structure to start a domino effect.\n - The program is fully coded with **Python** and the **Logic** is noteworthy.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/mohsen-sh97/dominoes"
                 }
             ],
             "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
+                "Python"
             ]
         },
         {
