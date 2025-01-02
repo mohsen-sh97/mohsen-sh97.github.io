@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/portfolio-poster.png",
+            "image" : "images/projects/portfolio_poster.png",
             "title": "Dev Portfolio",
             "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
             "links": [
@@ -17,31 +17,30 @@
             "tags" : [
                 "React",
                 "Portfolio",
-                "JavaScript"
+                "JavaScript",
+                "Latex"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "image" : "images/projects/royalstay_project.png",
+            "title": "RoyalStay -  Visa & Hotel website",
+            "bodyText": "- The RoyalStay website coded with **FastApi**. Hotel providers can sell their hotel and visa specifically for **Dubai**.\n - **React** framework is used for its frontend.\n - Deployed on a local ubuntu server so sometiimes it is down",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
+                    "href": "https://github.com/mohsen-sh97/royalstay_frontend"
                 },
                 {
                     "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "href": "https://royalstay.net"
                 }
             ],
             "tags" : [
                 "Python",
-                "Django",
+                "FastApi",
                 "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "React",
+                "Nginx"
             ]
         },
         {
