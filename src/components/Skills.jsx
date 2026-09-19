@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
@@ -25,7 +25,7 @@ function Skills(props) {
 
   const renderSkillsIntro = (intro) => (
     <h4 style={styles.introTextContainer}>
-      <ReactMarkdown children={intro} />
+      <ReactMarkdown>{intro}</ReactMarkdown>
     </h4>
   );
 
@@ -54,7 +54,7 @@ function Skills(props) {
                     <div key={item.title} style={{ display: 'inline-block' }}>
                       <img
                         style={styles.iconStyle}
-                        src={item.icon}
+                        src={item.icon ? (item.icon.startsWith('/') || item.icon.startsWith('http') ? item.icon : `/${item.icon}`) : ''}
                         alt={item.title}
                       />
                       <p>{item.title}</p>
