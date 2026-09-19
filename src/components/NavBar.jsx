@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect, useState, useContext } from 'react';
-import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
@@ -13,7 +12,53 @@ const styles = {
   },
 };
 
+const navLinkStyles = `
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-indent: .3em;
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+
+  &::after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0;
+    content: "";
+    display: block;
+    margin-top: 2px;
+    height: 3px;
+    width: 0;
+  }
+
+  &:hover::after {
+    visibility: visible;
+    width: 40%;
+  }
+
+  &.active::after,
+  &.navbar__link--active::after {
+    transition: all ease-in-out .2s;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 768px) {
+    &::after {
+      display: none;
+    }
+  }
+`;
+
 const ExternalNavLink = styled.a`
+  ${navLinkStyles}
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor};
@@ -24,6 +69,7 @@ const ExternalNavLink = styled.a`
 `;
 
 const InternalNavLink = styled(NavLink)`
+  ${navLinkStyles}
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor};
@@ -31,6 +77,7 @@ const InternalNavLink = styled(NavLink)`
   &::after {
     background-color: ${(props) => props.theme.accentColor};
   }
+  &.active,
   &.navbar__link--active {
     color: ${(props) => props.theme.navbarTheme.linkActiveColor};
   }
@@ -63,7 +110,7 @@ const NavBar = () => {
         {data?.logo && (
           <Navbar.Brand href="/">
             <img
-              src={data?.logo?.source}
+              src={data?.logo?.source ? (data.logo.source.startsWith('/') ? data.logo.source : `/${data.logo.source}`) : ''}
               className="d-inline-block align-top"
               alt="main logo"
               style={
@@ -98,8 +145,7 @@ const NavBar = () => {
                 <InternalNavLink
                   key={section.title}
                   onClick={() => setExpanded(false)}
-                  exact={index === 0}
-                  activeClassName="navbar__link--active"
+                  end={index === 0}
                   className="navbar__link"
                   to={section.href}
                   theme={theme}
@@ -117,5 +163,4 @@ const NavBar = () => {
   );
 };
 
-const NavBarWithRouter = withRouter(NavBar);
-export default NavBarWithRouter;
+export default NavBar;

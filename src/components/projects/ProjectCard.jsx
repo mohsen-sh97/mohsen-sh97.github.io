@@ -35,7 +35,7 @@ const styles = {
 
 const ProjectCard = (props) => {
   const theme = useContext(ThemeContext);
-  const parseBodyText = (text) => <ReactMarkdown children={text} />;
+  const parseBodyText = (text) => <ReactMarkdown>{text}</ReactMarkdown>;
 
   const { project } = props;
 
@@ -49,7 +49,7 @@ const ProjectCard = (props) => {
         }}
         text={theme.bsSecondaryVariant}
       >
-        <Card.Img variant="top" src={project?.image} />
+        <Card.Img variant="top" src={project?.image ? (project.image.startsWith('/') || project.image.startsWith('http') ? project.image : `/${project.image}`) : ''} />
         <Card.Body>
           <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>

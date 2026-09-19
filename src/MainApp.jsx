@@ -1,9 +1,25 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
-import NavBarWithRouter from './components/NavBar';
+import NavBar from './components/NavBar';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
+
+// Pre-declare lazy components OUTSIDE the component function
+// so they are not re-created on every render (fixes "No routes matched" warning)
+const About = React.lazy(() => import('./components/About.jsx'));
+const Skills = React.lazy(() => import('./components/Skills.jsx'));
+const Education = React.lazy(() => import('./components/Education.jsx'));
+const Experience = React.lazy(() => import('./components/Experience.jsx'));
+const Projects = React.lazy(() => import('./components/Projects.jsx'));
+
+const componentMap = {
+  About,
+  Skills,
+  Education,
+  Experience,
+  Projects,
+};
 
 function MainApp() {
   const [data, setData] = useState(null);
@@ -17,28 +33,29 @@ function MainApp() {
       .catch((err) => err);
   }, []);
 
+  // Don't render Routes until route data is loaded — avoids "No routes matched" warning
+  if (!data) return <FallbackSpinner />;
+
   return (
     <div className="MainApp">
-      <NavBarWithRouter />
+      <NavBar />
       <main className="main">
-        <Switch>
-          <Suspense fallback={<FallbackSpinner />}>
-            <Route exact path="/" component={Home} />
-            {data
-              && data.sections.map((route) => {
-                const SectionComponent = React.lazy(() => import('./components/' + route.component));
-                return (
-                  <Route
-                    key={route.headerTitle}
-                    path={route.path}
-                    component={() => (
-                      <SectionComponent header={route.headerTitle} />
-                    )}
-                  />
-                );
-              })}
-          </Suspense>
-        </Switch>
+        <Suspense fallback={<FallbackSpinner />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {data.sections.map((route) => {
+              const SectionComponent = componentMap[route.component];
+              if (!SectionComponent) return null;
+              return (
+                <Route
+                  key={route.headerTitle}
+                  path={route.path}
+                  element={<SectionComponent header={route.headerTitle} />}
+                />
+              );
+            })}
+          </Routes>
+        </Suspense>
       </main>
     </div>
   );
